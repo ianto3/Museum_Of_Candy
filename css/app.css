@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body {
+    background: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#mainNavbar .navbar-brand {
+    color: #ea1c2c;
+    font-size: 1.5rem;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #ea1c2c;
+}
+
+#museumTextRep span {
+    color: #ea1c2c;
+}
+
+@media (min-width: 992px) {
+    #museumTextRep h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #museumTextRep h2 {
+        font-size: 2.5rem;
+    }
+}
