@@ -7,6 +7,10 @@
 	outline: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #f5d9d5;
     font-family: "Nunito", sans-serif;
@@ -40,7 +44,8 @@ body {
 
 .candy-info p {
     color:#d63b8f;
-    line-height: 1.5em;
+    line-height: 2em;
+    font-weight: 100;
 }
 
 section {
@@ -61,12 +66,16 @@ section:first-of-type {
         font-size: 1.6rem;
     }
 
-    .candy-info p, h2 {
-        font-size: 1rem;
+    .candy-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .candy-info p {
+        font-size: 1.2rem;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
     #museumTextRep h2 {
         font-size: 2rem;
     }
