@@ -45,7 +45,9 @@
   </nav>
 
   <!-- container-fluid is used as this container reaches the whole width of the page without margins -->
+  <!-- eliminate padding along x axis with px-0 -->
   <section class="container-fluid px-0">
+    <!-- first row -->
     <div class="row align-items-center">
       <div class="col-md-6">
         <div id="museumTextRep" class="text-center d-none d-md-block text-white">
@@ -62,23 +64,95 @@
         <img src="imgs/hand2.png" alt="Gloved hand holding a donut." class="img-fluid pr-0">
       </div>
     </div>
-
   </section>
+
+  <!-- second row -->
+  <section class="container-fluid px-0">
+    <div class="row align-items-center">
+      <!-- order-2, second in order, order-md-1, except past md, it changes to first in order -->
+      <!-- need to state the order information on each column -->
+      <div class="col-md-6 order-2 order-md-1">
+        <img src="imgs/milk.png" alt="Milk jars with donuts." class="img-fluid">
+      </div>
+      <div class="col-md-6 order-1 order-md-2">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 candy-info text-center mb-5 mb-md-0">
+            <h2>MUSEUM OF CANDY</h2>
+            <img src="imgs/lolli_icon.png" alt="" class="d-none d-md-inline">
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquam rem incidunt ipsam ab
+              sint,
+              quibusdam
+              consectetur cumque pariatur vitae deleniti cupiditate ut officia fugiat asperiores eaque, aperiam modi
+              illum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- thrid row -->
+  <section class="container-fluid px-0">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 candy-info text-center mb-5 mb-md-0">
+            <h2>MUSEUM OF CANDY</h2>
+            <img src="imgs/lolli_icon.png" alt="" class="d-none d-md-inline">
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquam rem incidunt ipsam ab
+              sint,
+              quibusdam
+              consectetur cumque pariatur vitae deleniti cupiditate ut officia fugiat asperiores eaque, aperiam modi
+              illum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="imgs/gumball.png" alt="Milk jars with donuts." class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- fourth row -->
+  <section class="container-fluid px-0">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <img src="imgs/sprinkles.png" alt="Milk jars with donuts." class="img-fluid">
+      </div>
+      <div class="col-md-6 order-1 order-md-2">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 candy-info text-center mb-5 mb-md-0">
+            <h2>MUSEUM OF CANDY</h2>
+            <img src="imgs/lolli_icon.png" alt="" class="d-none d-md-inline">
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquam rem incidunt ipsam ab
+              sint,
+              quibusdam
+              consectetur cumque pariatur vitae deleniti cupiditate ut officia fugiat asperiores eaque, aperiam modi
+              illum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script> -->
-
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $("#mainNavbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
 </body>
 
 </html>
